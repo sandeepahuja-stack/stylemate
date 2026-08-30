@@ -1,0 +1,60 @@
+{
+  "name": "STYLEMATE",
+  "description": "AI-native private fashion boutique. Discover, compare, and prepare pieces through WebMCP tools on the live page.",
+  "version": "0.1",
+  "homepage": "/",
+  "tools": [
+    {
+      "name": "getUserStyleProfile",
+      "description": "Return the private client's style identity, colors, silhouettes, materials, occasions, and budget."
+    },
+    {
+      "name": "searchProducts",
+      "description": "Search or refine the live collection."
+    },
+    {
+      "name": "getProductDetails",
+      "description": "Return editorial details for a product by id."
+    },
+    {
+      "name": "getRecommendations",
+      "description": "Rank products against the style profile and a natural-language brief. Updates the live website."
+    },
+    {
+      "name": "compareProducts",
+      "description": "Compare products and return a stylist's verdict."
+    },
+    {
+      "name": "checkInventory",
+      "description": "Check atelier availability."
+    },
+    {
+      "name": "checkSizeAvailability",
+      "description": "Check a specific size."
+    },
+    {
+      "name": "buildOutfit",
+      "description": "Compose a complete look around an optional anchor product."
+    },
+    {
+      "name": "addToWishlist",
+      "description": "Propose adding a product to the wardrobe. Requires human confirmation."
+    },
+    {
+      "name": "addToCart",
+      "description": "Propose adding a product to the cart. Requires human confirmation."
+    },
+    {
+      "name": "updateCart",
+      "description": "Update quantity for a cart line."
+    },
+    {
+      "name": "getAvailableCoupons",
+      "description": "List private-client courtesies."
+    },
+    {
+      "name": "applyCoupon",
+      "description": "Propose applying a courtesy code. Requires confirmation."
+    }
+  ]
+}

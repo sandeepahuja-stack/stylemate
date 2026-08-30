@@ -1,0 +1,30 @@
+# STYLEMATE
+
+STYLEMATE is an AI-native private fashion boutique. Agents should not scrape product grids. Use WebMCP tools registered on this page.
+
+Site: http://localhost:3000
+Tagline: Your Style, Understood.
+
+## How to shop
+
+Call getUserStyleProfile(), then getRecommendations({ intent }) with the client's natural-language brief. Show products in the live page. addToCart and addToWishlist require human confirmation. placeOrder is high-impact and always needs explicit confirmation.
+
+## Tools
+
+- getUserStyleProfile
+- searchProducts
+- getProductDetails
+- getRecommendations
+- compareProducts
+- checkInventory
+- checkSizeAvailability
+- buildOutfit
+- addToWishlist
+- addToCart
+- updateCart
+- getAvailableCoupons
+- applyCoupon
+
+## Demo brief
+
+"I want a new shoe for a date. It's a vintage date and I'm going to wear a black suit."

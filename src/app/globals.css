@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-surface: #fdf9f2;
+  --color-surface-dim: #dddad3;
+  --color-surface-bright: #fdf9f2;
+  --color-surface-container: #f2ede6;
+  --color-surface-container-low: #f7f3ec;
+  --color-surface-container-high: #ece8e1;
+  --color-surface-container-highest: #e6e2db;
+  --color-on-surface: #1c1c17;
+  --color-on-surface-variant: #444748;
+  --color-outline: #747878;
+  --color-outline-variant: #c4c7c7;
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1c1b1b;
+  --color-gold: #a17f3b;
+  --color-gold-deep: #5d4201;
+  --color-burgundy: #4a1c24;
+  --color-secondary: #5e5f5c;
+  --color-inverse-surface: #31302c;
+  --color-inverse-on-surface: #f4f0e9;
+  --font-serif: var(--font-bodoni), "Times New Roman", serif;
+  --font-sans: var(--font-montserrat), "Helvetica Neue", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #1c1b1b;
+  color: #fdf9f2;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.hairline {
+  border-color: color-mix(in srgb, var(--color-outline-variant) 80%, transparent);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
