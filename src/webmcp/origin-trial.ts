@@ -1,0 +1,3 @@
+/** Chrome WebMCP origin trial for https://stylemate-gilt.vercel.app */
+export const WEBMCP_ORIGIN_TRIAL_TOKEN =
+  "A56sJU8Z08QHLlmzQa9ZgLYRMlL8zfxfqkRvrWYjfTZ+mVfn4NZg3PZGou09YbPHelAXtzYj7s/tP06kNBaKuQgAAACAeyJvcmlnaW4iOiJodHRwczovL3N0eWxlbWF0ZS1naWx0LnZlcmNlbC5hcHA6NDQzIiwiZmVhdHVyZSI6IldlYk1DUCIsImV4cGlyeSI6MTc5NDg3MzYwMCwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=";

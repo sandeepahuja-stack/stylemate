@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bodoni_Moda, Montserrat } from "next/font/google";
 import { Providers } from "@/components/Providers";
+import { WEBMCP_ORIGIN_TRIAL_TOKEN } from "@/webmcp/origin-trial";
 import "./globals.css";
 
 const bodoni = Bodoni_Moda({
@@ -50,6 +51,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${bodoni.variable} ${montserrat.variable} h-full antialiased`}
     >
+      <head>
+        <meta httpEquiv="origin-trial" content={WEBMCP_ORIGIN_TRIAL_TOKEN} />
+      </head>
       <body className="flex min-h-full flex-col bg-surface font-sans text-on-surface">
         <script
           type="application/ld+json"
